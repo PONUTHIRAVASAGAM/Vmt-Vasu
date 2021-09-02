@@ -37,24 +37,25 @@
         </tr>
     </table>
     <div>
-<h2>Send Request:</h2><a class="AdminLogin" href="After Student Login.html">Back</a>
-      </div><br><br>
-      <div>
-        <Form name="Send Request" onsubmit="return validate()"  method="POST" action="Somthing">
-            <label> Name: </label><br>
-          <input id="Name" class="Box" type="text" name="mname" placeholder="Enter Your Name"><br>
-          <label id="MName"></label><br>
-          <label> College: </label><br>
-          <input id="College" class="Box" type="text" name="cname"placeholder="Enter Your College"><br>
-          <label id="CName"></label><br>
-          <label> Request For: </label><br>
-          <input id="RequestFor" class="Box" type="text" name="rname" placeholder="Enter Your Request"><br><br>
-          <label id="RName"></label><br>
-          <input type="button" value="Enter" class="Enter"onclick="return validate()" >&ensp;&ensp;
-          <input type="button" class="Reset"   Value="Reset" >
-          <script src="C:\Users\hp\Desktop\Daily Activities\30-08-2021\Project\Send Request.js"></script>
-        </div> 
-       </form>
-      
-      </body>
-                  </html>
+        <div>
+
+            <h2>Send College Feedback:</h2><a class="AdminLogin" href="After College Login.html">Back</a>
+          </div><br><br>
+    
+              <dd>Please send your feedback(maximum length:200 charcter only)</dd>
+              <br>
+              <div>
+                <Form name="SendCollegeFeedback" onsubmit="return validate()"  method="POST" action="After College Login.html">
+            <label> Feedback:</label>
+              <br>
+              <br>
+              <textarea id="Feedback" name="fname" class="Box" cols="30" rows="3" placeholder="Enter Your Feedback"></textarea><br><br>
+              <label id="Fname"></label> <br>
+              <input type="button" class="Enter" value="Enter" onclick="return validate()">&ensp;&ensp;&ensp;&ensp;
+              <input type="button" class="Reset"   Value="Reset" >
+              <script src="C:\Users\hp\Desktop\Daily Activities\30-08-2021\Project\Send College Feedback.js"></script>
+           
+      </form>
+    </div>
+    </body>
+        </html>

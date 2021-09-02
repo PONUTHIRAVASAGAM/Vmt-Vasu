@@ -41,26 +41,31 @@
        <h2>Update Faculty:</h2><a class="AdminLogin" href="Faculty Management.html">Back</a>
       </div><br><br>
       <div>
-      <form>
+      <form name="AddFaculty" onsubmit="return validate()"  method="POST" action="After Admin Login.html">
         <label>Faculty Name:</label> <br>
 
-          <input id="Box" type="text" name="fname" placeholder="Enter The Faculty Name"><br>
+          <input id="FacultyName" class="Box" type="text" name="fname" placeholder="Enter The Faculty Name"><br><br>
+          <label id="FName"></label><br>
 
-          <label>Qualification:</label> <br>
+          <label>Qualification:</label><br>
 
-          <input id="Box" type="text" name="qname" placeholder="Enter The Qualification"><br>
+          <input id="Qualification" class="Box" type="text" name="qname" placeholder="Enter The Qualification"><br><br>
+          <label id="QName"></label><br>
 
           <label>Experience:</label><br>
 
-          <input id="Box" type="text" name="ename" placeholder="Enter The Experience"><br>
+          <input id="Experience" class="Box" type="text" name="ename" placeholder="Enter The Experience"><br><br>
+          <label id="EName"></label><br>
 
           <label>Skillset:</label><br>
 
-          <input id="Box" type="text" name="uname" placeholder="Enter The Skillset"><br><br><br>
-                        
-          <button  type="button" value="submit" onclick="alert('You Have Updated Sucessfully')"><a class="Enter"  href="Faculty Management.html">submit</a></button>&ensp;&ensp;&ensp;
-          <button  type="button" value="Reset"><a class="Reset" href="Faculty Management.html">Reset</a></button>
-
+          <input id="Skillset"  class="Box" type="text" name="sname" placeholder="Enter The Skillset"><br>
+          <label id="SName"></label><br><br><br>
+            
+         
+          <input type="button" class="Enter" value="Enter" onclick="return validate()">&ensp;&ensp;&ensp;&ensp;
+          <input type="button" class="Reset"   Value="Reset" >
+          <script src="C:\Users\hp\Desktop\Daily Activities\30-08-2021\Project\Add Faculty.js"></script>
       </form>
   </div>
 </body>

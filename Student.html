@@ -37,32 +37,37 @@
         </tr>
     </table>
      
-<Form >
+    <Form name="Student" onsubmit="return validate()"  method="POST" action="After Student Login.html">
 
     <h3  ><u><b>Student Login</b></u></h3>
     <br>
     <div  >
         <label>First Name</label><br>
-        <input id="Box"  type="text" name="fname" placeholder="Enter Your First Name">
+        <input id="FirstName" class="Box"  type="text" name="fname" placeholder="Enter Your First Name"><br>
+        <label id="FName"></label>
     </div>
     <br>
     <div><label>last Name</label><br>
-        <input id="Box" type="text" name="lname" placeholder="Enter Your Last Name"></div>
+        <input id="lastName" class="Box" type="text" name="lname" placeholder="Enter Your Last Name"></div>
         <br>
+        <label id="LName"></label>
         <div>
             <label>Password</label><br>
-            <input id="Box" type="Password" name="pname"placeholder="Enter Your Password">
+            <input id="Password" class="Box" type="Password" name="pname"placeholder="Enter Your Password"><br>
+            <label id="PName"></label>
         </div>
         <br>
         <br>
         <div>
             <label>DOB</label><br>
-            <input id="Box" type="date" name="lname" >
+            <input id="DOB" class="Box" type="date" name="dname" ><br>
+            <label id="DName"></label>
         </div>
         <br>
         <br>
-        <button value="Enter"><a class="Enter"  href="After Student Login.html">Login</a></button>&ensp;&ensp;
-            <button  Value="Reset"><a class="Reset" href="Student.html"> Reset </a></button>
-<br>
+        <input type="button" class="Enter" value="Enter" onclick="return validate()">&ensp;&ensp;&ensp;&ensp;
+        <input type="button" class="Reset"   Value="Reset" >
+        <script src="Student.js"></script>
+    </Form>
 <br>
             </html>

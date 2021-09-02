@@ -39,20 +39,23 @@
     <div>
         <div>
 
-          
-            <h2>Send Feedback:</h2><a class="AdminLogin" href="After College Login.html">Back</a>
+            <h2>Send Student Feedback:</h2><a class="AdminLogin" href="After College Login.html">Back</a>
           </div><br><br>
-          <div>
-            <dd>Please send your feedback(maximum length:200 charcter only)</dd><br>
-            
-              <form>
+    
+              <dd>Please send your feedback(maximum length:200 charcter only)</dd>
+              <br>
+              <div>
+                <Form name="SendCollegeFeedback" onsubmit="return validate()"  method="POST" action="After Student Login.html">
             <label> Feedback:</label>
               <br>
               <br>
-              <textarea id="Box" cols="30" rows="3"></textarea><br><br>
-              <button value="Enter"><a class="Enter"  href="#" onclick="alert('Your Feedback Submitted successfully')">Send feedback</a></button>&ensp;&ensp;
-              <button  Value="Reset"><a class="Reset" href="Send Feedback.html"> Reset </a></button>
-          </div>
+              <textarea id="Feedback" name="fname" class="Box" cols="30" rows="3" placeholder="Enter Your Feedback"></textarea><br><br>
+              <label id="Fname"></label> <br>
+              <input type="button" class="Enter" value="Enter" onclick="return validate()">&ensp;&ensp;&ensp;&ensp;
+              <input type="button" class="Reset"   Value="Reset" >
+              <script src="C:\Users\hp\Desktop\Daily Activities\30-08-2021\Project\Send Student Feedback.js"></script>
+           
       </form>
+    </div>
     </body>
         </html>

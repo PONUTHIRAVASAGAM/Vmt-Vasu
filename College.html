@@ -1,10 +1,12 @@
+
 <!DOCTYPE html>
 <html>
 <head>  
     
     <title>AKKA UNIVERSITY</title>
-    <link rel="icon" href="C:\Users\hp\Desktop\Daily Activities\13-08-2021\Project\Images\AU.jpg">
+    <link rel="icon" href="C:\Users\hp\Desktop\Daily Activities\30-08-2021\Project\AU.jpg">
     <link rel="stylesheet" href="Style.css">
+
 </head>
 <body class="LoginPage">
     <table>
@@ -37,23 +39,29 @@
         </tr>
     </table>
     
-<Form>
-    <h3><u><b>college Login</b></u></h3>
+<Form name="College" onsubmit="return validate()"  method="POST" action="After College Login.html">
+    <h3><u><b>College Login</b></u></h3>
     <br>
-    <div><label>college Name</label>
+    <div><label>College Name</label>
         <br>
-        <input id="Box" type="text" name="lname" placeholder="Enter The college Name"></div>
-        <br>
+        <input id="UserName" class="Box" type="text" name="lname" placeholder="Enter The College Name"><br><br>
+        <label id="UName"></label>
+    </div>
         <div>
             <label>Password</label>
             <br>
-            <input id="Box" type="Password" name="pname" placeholder="Enter The college Password">
+            <input id="Password" class="Box" type="Password" name="pname" placeholder="Enter The College Password"><br><br>
+            <label id="PWord"></label>
         </div>
         <br>
         <br>
-        
-            <button value="Enter"><a class="Enter"  href="After College Login.html">Login</a></button>&ensp;&ensp;
-            <button  Value="Reset"><a class="Reset" href="College.html"> Reset </a></button>
-<br>
-<br>
-            </html>
+         
+            <input type="button" class="Enter" value="Enter" onclick="return validate()">&ensp;&ensp;&ensp;&ensp;
+            <input type="button" class="Reset"   Value="Reset" >
+            <script src="C:\Users\hp\Desktop\Daily Activities\30-08-2021\Project\College.js"></script>
+        </Form>
+            
+            <br>
+            <br>
+            
+                        </html> 

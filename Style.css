@@ -123,24 +123,21 @@ label{
     margin-top: 10px;
     font-family: Alfa Slab One;
 }
-#Box{
+.Box{
     width: 200px;
     box-shadow: inset 0 0 10px gray;
     
 }
 .Enter{
-
+    padding-right: -20px;
+    margin-left: auto;
+    border-radius: 25%;
     transition: 1s;
-    position: relative;
-   width: 0px;
-   padding: 0px;
-   font-size: 20px;
-   border: 0px solid;
-   text-decoration: none;
-   background-color: rgba(52, 253, 2, 0.26);
+    text-decoration: none;
+    color: rgb(92, 194, 66);
+   background-color: rgba(250, 105, 9, 0.274);
    font-family: Alfa Slab One;
-  
-
+   font-size: 20px;
 }
 .Enter:hover{
 
@@ -149,13 +146,18 @@ label{
 }
 .Reset{
     
+    border-radius: 25%;
     transition: 1s;
     text-decoration: none;
-    color: darkcyan;
-   background-color: rgba(250, 105, 9, 0.274);
+    color: rgb(235, 26, 26);
+   background-color: rgba(250, 9, 9, 0.24);
    font-family: Alfa Slab One;
    font-size: 20px;
 
+}
+.Reset:hover{
+
+    background-color: rgba(71, 7, 248, 0.342);
 }
 address{
     transition: 1s;
@@ -200,6 +202,8 @@ address:hover{
 }
 
 .button {
+    border: 2px;
+    border: #4b4b4b;
     padding: 10px 15px;
     font-size: 24px;
     text-align: center;

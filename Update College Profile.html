@@ -39,24 +39,28 @@
     <div>
         
         
-        <h2>Update College</h2><a class="AdminLogin" href="After College Login.html">Back</a>
+        <h2>Update College Profile:</h2><a class="AdminLogin" href="After College Login.html">Back</a>
       </div><br><br>
       <div>
-          <form>
+        <Form name="College Registration" onsubmit="return validate()"  method="POST" action="Somthing">
           <label> college Name:</label><br>
-          <input id="Box" type="text" name="fname" placeholder="Enter The College Name"><br>
+          <input id="collegeName" class="Box" type="text" name="cname" placeholder="Enter The College Name"><br>
+          <label id="CName"></label><br>
           <label> User Name:</label><br>
-          <input id="Box" type="text" name="uname" placeholder="Enter The User Name"><br>
+          <input id="UserName" class="Box" type="text" name="uname" placeholder="Enter The User Name"><br>
+          <label id="UName"></label><br>
           <label> Password:</label><br>
-          <input id="Box" type="Password" name="pname" placeholder="Enter The Password"><br>
+          <input id="Password" class="Box" type="Password" name="pname" placeholder="Enter The Password"><br>
+          <label id="PName"></label><br>
           <label> College Mobile Number:</label><br>
-          <input id="Box" type="Number" name="mnum" placeholder="Enter The College Number"><br><br>
+          <input id="CollegeMobileNumber" class="Box" type="Number" name="cmnumber" placeholder="Enter The College Number"><br><br>
+          <label id="CMNumber"></label><br>
           <label> Address:</label><br>
-          <textarea id="Box" cols="30" rows="3" placeholder="Enter The College Address"></textarea><br>
-          <button class="button" type="button" onclick="alert('You have Updated successfully')">Update</button>
+          <textarea name="Address" class="Box" cols="30" rows="3" placeholder="Enter The College Address"></textarea><br>
+          <label id="Address"></label><br>
+          <button class="button" type="button" onclick="return validate()">Register</button>
 
-         
-      </div>
+          <script src="C:\Users\hp\Desktop\Daily Activities\30-08-2021\Project\Update College Profile.js"></script>
   </form>
 </div>
 </body>
